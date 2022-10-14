@@ -1,0 +1,24 @@
+.channelCard {
+  /* border: 1px solid white; */
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  /* height: 330px; */
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  /* background-color: chartreuse; */
+}
+.channelLogo {
+  object-fit: contain;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+.channelCardName {
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+}

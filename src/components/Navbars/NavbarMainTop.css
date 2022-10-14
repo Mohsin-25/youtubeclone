@@ -1,0 +1,175 @@
+.navTop {
+  display: flex;
+  padding: 8px 0px;
+  position: sticky;
+  /* border: 1px solid white; */
+  /* overflow: hidden; */
+  justify-content: space-between;
+}
+.menu {
+  margin: 0 20px;
+}
+
+.ytLogoDiv {
+  /* border: 1px solid white; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.ytLogo {
+  /* border: 1px solid white; */
+  display: flex;
+  cursor: pointer;
+  width: 150px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.navMid {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  background-color: rgb(50, 50, 50);
+  height: 40px;
+  width: 700px;
+  border-radius: 3px;
+  /* margin: 0 10px ; */
+
+  /* float: none;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
+.search {
+  height: 38px;
+  background-color: rgb(18, 18, 18);
+  border: none;
+  align-items: center;
+  border-radius: 3px;
+}
+input {
+  flex: 1;
+  padding-left: 5px;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+}
+.search > input:active {
+  border: 1px solid rgb(61, 160, 245);
+}
+.searchIconDiv {
+  display: flex;
+  /* flex: 1; */
+  /* align-items: center; */
+  width: 70px;
+  cursor: pointer;
+}
+.searchIcon {
+  margin: auto;
+}
+.navRight {
+  float: right;
+  margin-right: 30px;
+}
+.profileIcon {
+  margin-right: 5px;
+}
+.signIN {
+  display: flex;
+  color: rgb(61, 160, 245);
+  background-color: rgb(33, 33, 33);
+  border: 1px solid rgb(61, 160, 245);
+  padding: 5px 10px;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 3px;
+  margin-left: 10px;
+}
+.signIN span {
+  font-size: 14px;
+  font-weight: 500;
+}
+hr {
+  /* height: 1px; */
+  border-color: rgb(63, 63, 63);
+  float: right;
+  width: 100%;
+  margin-bottom: 2px;
+  /* width: 86%; */
+}
+.ytLogo > span {
+  text-decoration: none;
+  color: white;
+}
+/* Link {
+  text-decoration: none;
+} */
+
+@media only screen and (max-width: 555px) {
+  .menudiv {
+    display: none;
+  }
+  .signIN {
+    display: none;
+  }
+}
+
+/* RESPONSIVE CODE */
+@media only screen and (max-width: 555px) {
+  .navTop {
+    flex-direction: column;
+  }
+  input {
+    flex: 0.75;
+  }
+  .navMid {
+    flex: 1;
+
+    margin: 0 5px;
+  }
+  .searchIconDiv {
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 530px) {
+  input {
+    flex: 0.7;
+  }
+}
+@media only screen and (max-width: 505px) {
+  input {
+    flex: 0.65;
+  }
+}
+@media only screen and (max-width: 480px) {
+  input {
+    flex: 0.6;
+  }
+}
+@media only screen and (max-width: 450px) {
+  input {
+    flex: 0.55;
+  }
+}
+@media only screen and (max-width: 410px) {
+  input {
+    flex: 0.5;
+  }
+}
+@media only screen and (max-width: 385px) {
+  input {
+    flex: 0.45;
+  }
+}
+@media only screen and (max-width: 350px) {
+  input {
+    flex: 0.4;
+  }
+}
+@media only screen and (max-width: 320px) {
+  input {
+    flex: 0.35;
+  }
+}

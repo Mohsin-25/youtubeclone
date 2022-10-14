@@ -1,0 +1,17 @@
+.searchResults h2 {
+  display: block;
+  /* border: 1px solid; */
+  /* width: 100%; */
+  /* margin: auto; */
+  margin: 10px 0 10px 10px;
+}
+.searchResults span {
+  color: red;
+}
+
+/* RESPONSIVE CODE */
+@media only screen and (max-width: 460px) {
+  .searchResults h2 {
+    font-size: 22px;
+  }
+}
