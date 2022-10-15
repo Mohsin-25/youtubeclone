@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { fetchFromAPI } from "../fetchFromAPI";
-import Card from "./Card";
 import Videos from "./Videos";
 import "./Feed.css";
 

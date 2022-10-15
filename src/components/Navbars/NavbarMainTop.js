@@ -37,7 +37,7 @@ export default function NavbarMainTop() {
 
         <Link to="/"  style={{ textDecoration: 'none' ,color: 'inherit' }}>
           <div className="ytLogoDiv">
-            <img src="/photos/ytLogo.png" alt="" className="ytLogo" />
+            <img src="../photos/ytLogo.png" alt="" className="ytLogo" />
           </div>
         </Link>
         <div className="navMid" onKeyDown={handleKeyPress}>

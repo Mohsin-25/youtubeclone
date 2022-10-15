@@ -1,9 +1,8 @@
-import { Category } from "@mui/icons-material";
-import React, { useState } from "react";
+import React from "react";
 import "./LeftNav.css";
 import { typeTop } from "./LeftNavElement";
 import { typeBottom } from "./LeftNavElement";
-import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
+
 
 export default function LeftNav({
   selectedCategory,

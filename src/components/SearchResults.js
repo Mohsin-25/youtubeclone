@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { fetchFromAPI } from "../fetchFromAPI";
-import LeftNav from "./Navbars/LeftNav";
 import NavbarMainTop from "./Navbars/NavbarMainTop";
 import "./SearchResults.css";
 import Videos from "./Videos";
@@ -17,7 +16,6 @@ export default function SearchResults() {
   return (
     <div>
       <NavbarMainTop></NavbarMainTop>
-      {/* <LeftNav></LeftNav> */}
       <div className="searchResults">
         <h2>
           Search Results For: <span>"{searchTerm}"</span> videos
