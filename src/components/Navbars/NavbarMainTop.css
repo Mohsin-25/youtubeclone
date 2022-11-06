@@ -1,16 +1,24 @@
 .navTop {
   display: flex;
   padding: 8px 0px;
-  position: sticky;
+  position: fixed;
+  background-color: rgb(32, 32, 32);
+width: 100%;
   /* border: 1px solid white; */
   /* overflow: hidden; */
   justify-content: space-between;
+  z-index: 5;
 }
 .menu {
   margin: 0px 20px;
   cursor: pointer;
   padding: 2px;
-  border-radius: 50%;
+  /* border-radius: 50%; */
+}
+.menudiv {
+  cursor: pointer;
+  /* position: relative; */
+  /* z-index: 2; */
 }
 
 .ytLogoDiv {
@@ -20,6 +28,7 @@
   align-items: center;
   justify-content: center;
   height: 100%;
+  margin-right: 10px;
 }
 .ytLogo {
   /* border: 1px solid white; */
@@ -76,8 +85,12 @@ input {
   margin: auto;
 }
 .navRight {
+  display: flex;
   float: right;
   margin-right: 30px;
+}
+.bell {
+  margin: 5px 5px 0px 5px;
 }
 .profileIcon {
   margin-right: 5px;
@@ -113,38 +126,97 @@ hr {
   text-decoration: none;
 } */
 
-@media only screen and (max-width: 555px) {
-  .menudiv {
-    display: none;
-  }
-  .signIN {
-    display: none;
-  }
-}
-
 /* RESPONSIVE CODE */
 @media only screen and (max-width: 555px) {
-  .navTop {
+  /* .navTop {
     flex-direction: column;
-  }
+  } */
   input {
     flex: 0.75;
   }
   .navMid {
     flex: 1;
-
     margin: 0 5px;
   }
   .searchIconDiv {
     align-items: center;
   }
+  .signIN {
+    margin-left: -5px;
+    border: none;
+  }
+  .signIN span {
+    display: none;
+  }
 }
-@media only screen and (max-width: 530px) {
+/* @media only screen and (max-width: 530px) {
   input {
     flex: 0.7;
   }
+} */
+@media only screen and (max-width: 520px) {
+  input {
+    flex: none;
+    width: 180px;
+  }
+  .searchIconDiv {
+    width: 45px;
+  }
+  .menu {
+    margin: 0px 5px;
+  }
+  .ytLogoDiv {
+    margin-right: 60px;
+  }
 }
 @media only screen and (max-width: 505px) {
+  input {
+    width: 150px;
+  }
+}
+@media only screen and (max-width: 475px) {
+  input {
+    width: 120px;
+  }
+}
+@media only screen and (max-width: 445px) {
+  input {
+    width: 90px;
+  }
+}
+@media only screen and (max-width: 415px) {
+  .ytLogoDiv {
+    margin-right: 40px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .ytLogoDiv {
+    margin-right: 20px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .ytLogoDiv {
+    margin-right: 5px;
+  }
+}
+@media only screen and (max-width: 365px) {
+  input {
+    width: 70px;
+  }
+  .ytLogoDiv {
+    margin-right: 5px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  input {
+    width: 65px;
+  }
+  .ytLogoDiv {
+    margin-right: 0px;
+  }
+}
+
+/* @media only screen and (max-width: 505px) {
   input {
     flex: 0.65;
   }
@@ -178,4 +250,4 @@ hr {
   input {
     flex: 0.35;
   }
-}
+} */

@@ -19,6 +19,7 @@ export default function Home({
         setVideos={setVideos}
       ></TopNav> */}
       <Main></Main>
+      <div className="blurr"></div>
     </div>
   );
 }

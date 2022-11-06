@@ -4,6 +4,8 @@ import "./NavbarMainTop.css";
 import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
+import YouTubeIcon from "@mui/icons-material/YouTube";
+import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNoneOutlined";
 
 export default function NavbarMainTop() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -48,6 +50,18 @@ export default function NavbarMainTop() {
     });
   };
 
+  const navPop = () => {
+    if (window.innerWidth <= 1135) {
+      // const element = document.querySelectorAll(".leftNav");
+      // element.forEach((e) => {
+      //   e.classList.toggle("hide");
+      // });
+      document.querySelector(".leftNavPop").classList.toggle("show");
+
+      document.querySelector(".blurr").classList.toggle("show");
+    }
+  };
+
   return (
     <div>
       <nav className="navTop">
@@ -55,13 +69,13 @@ export default function NavbarMainTop() {
           <MenuIcon
             sx={{ fontSize: 32 }}
             className="menu"
-            onClick={navSwitch}
+            onClick={window.innerWidth >= 1135 ? navSwitch : navPop}
           ></MenuIcon>
         </div>
-
         <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
           <div className="ytLogoDiv">
-            <img src="../photos/ytlogocropped.jpg" alt="" className="ytLogo" />
+            <YouTubeIcon sx={{ fontSize: 32, color: "red" }}></YouTubeIcon><span>Youtube</span>
+            {/* <img src="../photos/ytlogocropped.jpg" alt="" className="ytLogo" /> */}
           </div>
         </Link>
         <div className="navMid" onKeyDown={handleKeyPress}>
@@ -83,6 +97,11 @@ export default function NavbarMainTop() {
           </div>
         </div>
         <div className="navRight">
+          <NotificationsNoneOutlinedIcon
+            sx={{ fontSize: 32 }}
+            className="bell"
+          ></NotificationsNoneOutlinedIcon>
+
           <button className="signIN">
             <AccountCircleOutlinedIcon
               className="profileIcon"

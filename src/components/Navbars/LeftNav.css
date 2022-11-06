@@ -92,17 +92,20 @@
   font-size: 12px;
   font-weight: 400;
 }
+.hide {
+  display: none;
+}
 
 /* RESPONSIVE CODE */
 @media only screen and (max-width: 1290px) {
-  .elementTitle {
+  .leftNav .elementTitle {
     font-weight: 500;
     font-size: 15px;
     margin: auto 10px;
   }
 }
 @media only screen and (max-width: 1210px) {
-  .elementTitle {
+  .leftNav .elementTitle {
     font-weight: 400;
     font-size: 14px;
     margin: auto 5px;
@@ -110,33 +113,33 @@
 }
 
 @media only screen and (max-width: 1135px) {
-  .elements {
+  .leftNav .elements {
     display: flex;
     flex-direction: column;
   }
-  .elementIcon {
+  .leftNav .elementIcon {
     margin-bottom: 5px;
   }
 }
 
 @media only screen and (max-width: 670px) {
-  .elementTitle {
+  .leftNav .elementTitle {
     font-size: 13px;
   }
 }
 @media only screen and (max-width: 580px) {
-  .elementTitle {
+  .leftNav .elementTitle {
     font-size: 12px;
   }
 }
 @media only screen and (max-width: 500px) {
-  .elementTitle {
+  .leftNav .elementTitle {
     font-weight: 400;
     font-size: 10px;
   }
 }
 @media only screen and (max-width: 420px) {
-  .elementTitle {
+  .leftNav .elementTitle {
     font-weight: 400;
     font-size: 9px;
   }

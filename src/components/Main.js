@@ -3,6 +3,7 @@ import "./Main.css";
 import LeftNav from "./Navbars/LeftNav";
 import Feed from "./Feed";
 import TopNav from "./Navbars/TopNav";
+import LeftNavPop from "./Navbars/LeftNavPop";
 
 export default function Main() {
   const [selectedCategory, setSelectedCategory] = useState("Latest");
@@ -20,6 +21,12 @@ export default function Main() {
             setVideos={setVideos}
           />
         )}
+        <LeftNavPop
+          selectedCategory={selectedCategory}
+          setSelectedCategory={setSelectedCategory}
+          videos={videos}
+          setVideos={setVideos}
+        ></LeftNavPop>
         <div>
           <TopNav
             selectedCategory={selectedCategory}
