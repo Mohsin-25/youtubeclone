@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Main.css";
 import LeftNav from "./Navbars/LeftNav";
 import Feed from "./Feed";
+import TopNav from "./Navbars/TopNav";
 
 export default function Main() {
   const [selectedCategory, setSelectedCategory] = useState("Latest");
@@ -11,18 +12,28 @@ export default function Main() {
   return (
     <div className="main">
       <div className="divider">
-        <LeftNav
-          selectedCategory={selectedCategory}
-          setSelectedCategory={setSelectedCategory}
-          videos={videos}
-          setVideos={setVideos}
-        />
-        <Feed
-          selectedCategory={selectedCategory}
-          setSelectedCategory={setSelectedCategory}
-          videos={videos}
-          setVideos={setVideos}
-        />
+        {window.innerWidth >= 480 && (
+          <LeftNav
+            selectedCategory={selectedCategory}
+            setSelectedCategory={setSelectedCategory}
+            videos={videos}
+            setVideos={setVideos}
+          />
+        )}
+        <div>
+          <TopNav
+            selectedCategory={selectedCategory}
+            setSelectedCategory={setSelectedCategory}
+            videos={videos}
+            setVideos={setVideos}
+          ></TopNav>
+          <Feed
+            selectedCategory={selectedCategory}
+            setSelectedCategory={setSelectedCategory}
+            videos={videos}
+            setVideos={setVideos}
+          />
+        </div>
       </div>
     </div>
   );

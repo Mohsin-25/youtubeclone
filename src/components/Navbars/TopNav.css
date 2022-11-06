@@ -1,0 +1,117 @@
+.topNav {
+  display: flex;
+  /* flex-direction: column; */
+  height: 50px;
+  /* background-color: burlywood; */
+  /* overflow: scroll !important; */
+  overflow-x: scroll !important;
+  white-space: nowrap !important;
+  /* scroll-snap-type: mandatory; */
+  width: 1315px;
+  /* width: auto; */
+  /* flex: 1; */
+  /* margin-left: calc(13.2%); */
+  position: absolute;
+}
+.topNav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+}
+.topNav ul li {
+  display: inline-block;
+  text-align: center;
+  list-style: none;
+  margin: 5px 5px;
+  padding: 8px 18px;
+  background-color: rgb(63, 63, 63);
+  border-radius: 10px;
+  width: 100%;
+  cursor: pointer;
+  object-fit: contain;
+  font-size: 14px;
+}
+.topNav ul li:hover {
+  background-color: rgb(111, 111, 111);
+}
+
+@media screen and (max-width: 480px) {
+  .topNav {
+    width: 480px;
+  }
+  .topNav ul li {
+    border-radius: 25px;
+  }
+}
+@media screen and (max-width: 1290px) {
+  .topNav {
+    width: 1150px;
+  }
+}
+@media screen and (max-width: 1190px) {
+  .topNav {
+    width: 1050px;
+  }
+}
+@media screen and (max-width: 1090px) {
+  .topNav {
+    width: 950px;
+  }
+}
+@media screen and (max-width: 990px) {
+  .topNav {
+    width: 850px;
+  }
+}
+@media screen and (max-width: 890px) {
+  .topNav {
+    width: 750px;
+  }
+}
+@media screen and (max-width: 790px) {
+  .topNav {
+    width: 650px;
+  }
+}
+@media screen and (max-width: 690px) {
+  .topNav {
+    width: 550px;
+  }
+}
+@media screen and (max-width: 590px) {
+  .topNav {
+    width: 460px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .topNav {
+    width: 420px;
+  }
+}
+@media screen and (max-width: 490px) {
+  .topNav {
+    width: 380px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .topNav {
+    width: 475px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .topNav {
+    width: 445px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .topNav {
+    width: 415px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .topNav {
+    width: 385px;
+  }
+}

@@ -2,6 +2,7 @@
   /* border: 1px solid white; */
   display: flex;
   flex-direction: column;
-  flex: 0.87;
+  /* flex: 0.7; */
+  margin-top: 40px;
   /* background-color: orange; */
 }

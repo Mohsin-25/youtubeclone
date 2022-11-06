@@ -28,16 +28,40 @@ export default function NavbarMainTop() {
     }
   };
 
+  const navSwitch = () => {
+    // document.querySelectorAll("elements").classList.add("switch");
+    const elements = document.querySelectorAll(".elements");
+    elements.forEach((elm) => {
+      elm.classList.toggle("switch");
+    });
+    const elementIcon = document.querySelectorAll(".elementIcon");
+    elementIcon.forEach((margin) => {
+      margin.classList.toggle("switchMargin");
+    });
+    const elementWidth = document.querySelectorAll(".leftNav");
+    elementWidth.forEach((eWidth) => {
+      eWidth.classList.toggle("switchWidth");
+    });
+    const elementTitle = document.querySelectorAll(".elementTitle");
+    elementTitle.forEach((eWidth) => {
+      eWidth.classList.toggle("switchFontSize");
+    });
+  };
+
   return (
     <div>
       <nav className="navTop">
         <div className="menudiv">
-          <MenuIcon sx={{ fontSize: 35 }} className="menu"></MenuIcon>
+          <MenuIcon
+            sx={{ fontSize: 32 }}
+            className="menu"
+            onClick={navSwitch}
+          ></MenuIcon>
         </div>
 
-        <Link to="/"  style={{ textDecoration: 'none' ,color: 'inherit' }}>
+        <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
           <div className="ytLogoDiv">
-            <img src="../photos/ytLogo.png" alt="" className="ytLogo" />
+            <img src="../photos/ytlogocropped.jpg" alt="" className="ytLogo" />
           </div>
         </Link>
         <div className="navMid" onKeyDown={handleKeyPress}>

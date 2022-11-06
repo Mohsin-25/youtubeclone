@@ -1,7 +1,7 @@
 import React from "react";
 import "./LeftNav.css";
-import { typeTop } from "./LeftNavElement";
-import { typeBottom } from "./LeftNavElement";
+import { leftTop } from "./LeftNavElement";
+import { leftBottom } from "./LeftNavElement";
 
 
 export default function LeftNav({
@@ -14,7 +14,7 @@ export default function LeftNav({
 
   return (
     <div className="leftNav">
-      {typeTop.map((type) => (
+      {leftTop.map((type) => (
         <ul key={type.title}>
           <li
             className="elements"
@@ -43,7 +43,7 @@ export default function LeftNav({
         ></AccountCircleOutlinedIcon>
         <span>SIGN IN</span>
       </button> */}
-      {typeBottom.map((type) => (
+      {leftBottom.map((type) => (
         <ul key={type.title}>
           <li
             className="elements"

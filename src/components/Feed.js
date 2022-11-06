@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { fetchFromAPI } from "../fetchFromAPI";
 import Videos from "./Videos";
 import "./Feed.css";
+import TopNav from "./Navbars/TopNav";
 
 export default function Feed({
   selectedCategory,
@@ -17,6 +18,13 @@ export default function Feed({
   }, [selectedCategory]);
   return (
     <div className="feed">
+      {/* <TopNav
+        selectedCategory={selectedCategory}
+        setSelectedCategory={setSelectedCategory}
+        videos={videos}
+        setVideos={setVideos}
+      ></TopNav> */}
+
       <h2 style={{ margin: 10 }}>{selectedCategory} Videos</h2>
       <div className="videos">
         <Videos videos={videos}></Videos>

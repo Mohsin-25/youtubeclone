@@ -7,21 +7,27 @@
   justify-content: space-between;
 }
 .menu {
-  margin: 0 20px;
+  margin: 0px 20px;
+  cursor: pointer;
+  padding: 2px;
+  border-radius: 50%;
 }
 
 .ytLogoDiv {
   /* border: 1px solid white; */
+  /* background-color: aqua; */
   display: flex;
   align-items: center;
   justify-content: center;
-
+  height: 100%;
 }
 .ytLogo {
   /* border: 1px solid white; */
   display: flex;
   cursor: pointer;
-  width: 150px;
+  width: 150px !important;
+  /* height: 35px; */
+  /* width: 100%; */
   margin-right: 10px;
   margin-bottom: 5px;
 }
