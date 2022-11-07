@@ -31,7 +31,7 @@ export default function RelatedVideos({
               <img
                 src={snippet?.thumbnails?.high?.url}
                 alt=""
-                className="videoChannelLogo"
+                className="videoChannelLogoRelated"
               />
             </div> */}
             <div>

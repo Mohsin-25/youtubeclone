@@ -24,7 +24,7 @@
   display: flex;
   margin-left: 10px;
 }
-.videoChannelLogo {
+.videoChannelLogoRelated {
   height: 35px;
   width: 35px;
   border-radius: 50%;
@@ -57,5 +57,10 @@
   }
   .videoCardRelated h4 {
     font-size: 14px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .videoImgRelated {
+    border-radius: 0px;
   }
 }

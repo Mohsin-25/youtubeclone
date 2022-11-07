@@ -1,0 +1,22 @@
+.bottomNav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(20, 20, 20);
+  /* height: 100px; */
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  padding: 5px 0px;
+}
+.bottomNavIcon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bottomNavIcon span {
+  font-size: 10px;
+  text-align: center;
+  font-weight: 400;
+}
