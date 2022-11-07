@@ -8,6 +8,10 @@
 .searchResults span {
   color: red;
 }
+.searchResults{
+  padding-top: 60px;
+
+}
 
 /* RESPONSIVE CODE */
 @media only screen and (max-width: 460px) {

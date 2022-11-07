@@ -5,8 +5,15 @@ import { useParams } from "react-router-dom";
 import { fetchFromAPI } from "../fetchFromAPI";
 import Videos from "./Videos";
 import NavbarMainTop from "./Navbars/NavbarMainTop";
+import LeftNavPop from "./Navbars/LeftNavPop";
+import Related from "./Related";
 
-export default function WatchVideo() {
+export default function WatchVideo({
+  selectedCategory,
+  setSelectedCategory,
+  videos,
+  setVideos,
+}) {
   const [videoDetail, setVideoDetail] = useState(null);
   const [relatedVideos, setRelatedVideos] = useState(null);
   const { id } = useParams();
@@ -34,6 +41,12 @@ export default function WatchVideo() {
   return (
     <div>
       <NavbarMainTop></NavbarMainTop>
+      {/* <LeftNavPop
+        selectedCategory={selectedCategory}
+        setSelectedCategory={setSelectedCategory}
+        videos={videos}
+        setVideos={setVideos}
+      ></LeftNavPop> */}
       <div className="videoScreen">
         <div className="watchVideoInfo">
           <div className="videoAndDetail">
@@ -70,10 +83,9 @@ export default function WatchVideo() {
         </div>
         <div className="recommended">
           <h3>Related Videos</h3>
-          <Videos videos={relatedVideos}></Videos>
+          <Related videos={relatedVideos}></Related>
         </div>
       </div>
     </div>
   );
 }
-

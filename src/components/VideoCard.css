@@ -1,7 +1,9 @@
 .videoCard {
   /* border: 1px solid white; */
   display: flex;
+
   flex-direction: column;
+  
   width: 270px;
   /* height: 330px; */
   margin: 0 3px;
@@ -14,6 +16,7 @@
   width: 270px;
   /* height: 180px; */
   object-fit: contain;
+  border-radius: 15px;
 }
 .videoInfo {
   display: flex;

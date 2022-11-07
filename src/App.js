@@ -14,7 +14,10 @@ function App() {
         <Route path="/channel/:id" element={<ChannelDetail />}></Route>
         <Route path="/search/:searchTerm" element={<SearchResults />}></Route>
       </Routes>
+      <div className="blurr"></div>
+
     </HashRouter>
+
   );
 }
 

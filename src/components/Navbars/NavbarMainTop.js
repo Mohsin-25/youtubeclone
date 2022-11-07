@@ -6,6 +6,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNoneOutlined";
+import MicIcon from "@mui/icons-material/Mic";
 
 export default function NavbarMainTop() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -74,28 +75,32 @@ export default function NavbarMainTop() {
         </div>
         <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
           <div className="ytLogoDiv">
-            <YouTubeIcon sx={{ fontSize: 32, color: "red" }}></YouTubeIcon><span>Youtube</span>
+            <YouTubeIcon sx={{ fontSize: 32, color: "red" }}></YouTubeIcon>
+            <span>Youtube</span>
             {/* <img src="../photos/ytlogocropped.jpg" alt="" className="ytLogo" /> */}
           </div>
         </Link>
-        <div className="navMid" onKeyDown={handleKeyPress}>
-          <input
-            type="search"
-            className="search"
-            placeholder="Search"
-            value={searchTerm}
-            onChange={(e) => {
-              setSearchTerm(e.target.value);
-            }}
-          />
-          <div className="searchIconDiv">
-            <SearchIcon
-              sx={{ fontSize: 25 }}
-              className="searchIcon"
-              onClick={handleSubmit}
-            ></SearchIcon>
+        
+          <div className="navMid" onKeyDown={handleKeyPress}>
+            <input
+              type="search"
+              className="search"
+              placeholder="Search"
+              value={searchTerm}
+              onChange={(e) => {
+                setSearchTerm(e.target.value);
+              }}
+            />
+            <div className="searchIconDiv">
+              <SearchIcon
+                sx={{ fontSize: 25 }}
+                className="searchIcon"
+                onClick={handleSubmit}
+              ></SearchIcon>
+            </div>
           </div>
-        </div>
+          {/* <MicIcon sx={{ fontSize: 32 }} className="mic"></MicIcon> */}
+        
         <div className="navRight">
           <NotificationsNoneOutlinedIcon
             sx={{ fontSize: 32 }}

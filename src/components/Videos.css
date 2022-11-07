@@ -1,15 +1,14 @@
 .videos {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 
-  
 /* RESPONSIVE CODE */
-  @media only screen and (max-width:400px ) {
+/* @media only screen and (max-width:400px ) {
     .videos {
       padding-left: 10px;
       justify-content: space-between;
     }
-  }
+  } */

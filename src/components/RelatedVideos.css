@@ -1,0 +1,61 @@
+.videoCardRelated {
+  /* border: 1px solid white; */
+  display: flex;
+
+  flex-direction: row;
+
+  width: 350px;
+  /* height: 330px; */
+  margin: 0 3px;
+  margin-bottom: 10px;
+  /* padding-bottom: 10px; */
+  cursor: pointer;
+  justify-content: flex-start;
+  /* background-color: chartreuse; */
+}
+.videoImgRelated {
+  /* width: 270px; */
+  border-radius: 15px;
+
+  height: 100px;
+  object-fit: contain;
+}
+.videoInfoRelated {
+  display: flex;
+  margin-left: 10px;
+}
+.videoChannelLogo {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  margin-right: 15px;
+  object-fit: cover;
+
+  /* background-color: gray; */
+}
+.videoCardRelated h4 {
+  margin-bottom: 5px;
+}
+.videoCardRelated h5 {
+  font-weight: 500;
+  color: gray;
+  /* margin: 0px 0; */
+}
+.channelNameRelated {
+  margin-bottom: 5px;
+}
+
+/* RESPONSIVE CODE */
+@media only screen and (max-width: 1080px) {
+  .videoCardRelated {
+    width: auto;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .videoCardRelated {
+    min-width: 330px;
+  }
+  .videoCardRelated h4 {
+    font-size: 14px;
+  }
+}

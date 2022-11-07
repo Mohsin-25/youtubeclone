@@ -1,0 +1,15 @@
+.relatedVideos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  
+/* RESPONSIVE CODE */
+  @media only screen and (max-width:400px ) {
+    .videos {
+      padding-left: 10px;
+      justify-content: space-between;
+    }
+  }

@@ -1,11 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { fetchFromAPI } from "../fetchFromAPI";
+import LeftNavPop from "./Navbars/LeftNavPop";
 import NavbarMainTop from "./Navbars/NavbarMainTop";
 import "./SearchResults.css";
 import Videos from "./Videos";
 
-export default function SearchResults() {
+export default function SearchResults({
+  selectedCategory,
+  setSelectedCategory,
+
+}) {
   const [videos, setVideos] = useState([]);
   const { searchTerm } = useParams();
   useEffect(() => {
@@ -16,6 +21,12 @@ export default function SearchResults() {
   return (
     <div>
       <NavbarMainTop></NavbarMainTop>
+      {/* <LeftNavPop
+        selectedCategory={selectedCategory}
+        setSelectedCategory={setSelectedCategory}
+        videos={videos}
+        setVideos={setVideos}
+      ></LeftNavPop> */}
       <div className="searchResults">
         <h2>
           Search Results For: <span>"{searchTerm}"</span> videos
