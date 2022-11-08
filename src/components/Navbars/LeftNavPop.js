@@ -9,13 +9,18 @@ export default function LeftNavPop({
   videos,
   setVideos,
 }) {
-//   const [showPopNav, setShowPopNav] = useState(false);
+  const closePopOnSelected = () => {
+    document.querySelector(".leftNavPop").classList.toggle("show");
+
+    document.querySelector(".blurr").classList.toggle("show");
+  };
+  //   const [showPopNav, setShowPopNav] = useState(false);
   return (
     // {
     // showPopNav &&
     <div className="leftNavPop">
       {leftTop.map((type) => (
-        <ul key={type.title}>
+        <ul key={type.title} onClick={closePopOnSelected}>
           <li
             className="elements"
             style={{
@@ -37,7 +42,7 @@ export default function LeftNavPop({
         </ul>
       ))}
       {leftBottom.map((type) => (
-        <ul key={type.title}>
+        <ul key={type.title} onClick={closePopOnSelected}>
           <li
             className="elements"
             style={{

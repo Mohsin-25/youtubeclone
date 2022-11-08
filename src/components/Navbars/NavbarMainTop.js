@@ -50,6 +50,7 @@ export default function NavbarMainTop() {
       eWidth.classList.toggle("switchFontSize");
     });
   };
+  
 
   const navPop = () => {
     if (window.innerWidth <= 1135) {
